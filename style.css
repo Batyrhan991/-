@@ -1,0 +1,96 @@
+/* Стили перенесены из исходного HTML */ 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 90%;
+}
+.header {
+    text-align: center;
+    color: #58cc02;
+    margin-bottom: 2rem;
+}
+.question {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #4b4b4b;
+}
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.option {
+    padding: 1rem;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: white;
+    font-size: 1rem;
+}
+.option:hover {
+    background-color: #f7f7f7;
+}
+.option.selected {
+    border-color: #58cc02;
+    background-color: #e5f8d3;
+}
+.option.correct {
+    border-color: #58cc02;
+    background-color: #d7f9d1;
+}
+.option.wrong {
+    border-color: #ff4b4b;
+    background-color: #ffd1d1;
+}
+.button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.check {
+    background-color: #58cc02;
+    color: white;
+    margin-bottom: 1rem;
+}
+.check:hover {
+    background-color: #46a302;
+}
+.reset {
+    background-color: #ff4b4b;
+    color: white;
+}
+.reset:hover {
+    background-color: #e63939;
+}
+.progress {
+    height: 10px;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.progress-bar {
+    height: 100%;
+    background-color: #58cc02;
+    border-radius: 5px;
+    width: 0%;
+    transition: width 0.3s;
+}
